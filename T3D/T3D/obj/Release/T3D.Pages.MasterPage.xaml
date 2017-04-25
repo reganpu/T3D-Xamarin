@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="T3D.MasterPage"
+			 Title="Master Page"
+			 Padding="10"
+	  	 	 x:Name="masterPage">
+
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness"
+				    iOS="0, 20, 0, 0"/>
+	</ContentPage.Padding>
+	
+	<ContentPage.Icon>
+		<OnPlatform x:TypeArguments="FileImageSource"
+				    iOS="btn_menu.png"
+					Android="btn_menu.png"/>
+	</ContentPage.Icon> 
+
+
+	<Frame OutlineColor="Accent">
+		<StackLayout Orientation="Horizontal"
+					 HorizontalOptions="Center"
+					 VerticalOptions="Center">
+			<Label Text="{Binding Source={x:Reference masterPage},
+								  Path=Width,
+								  StringFormat='Master: {0:F0}'}"/>
+			<Label Text="{Binding Source={x:Reference masterPage},
+								  Path=Height,
+								  StringFormat='&#x00D7; {0:F0}'}"/>
+		</StackLayout>
+	</Frame>
+	
+</ContentPage>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{375EDEED-09EA-488D-9788-3D8D0F32E775}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>T3D.iOS</RootNamespace>
+    <AssemblyName>T3D.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>37999</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.224\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.224\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.224\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.224\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\T3D\T3D.csproj">
+      <Project>{2647A5D6-3FDA-425E-A551-368AB9D7DDD8}</Project>
+      <Name>T3D</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\ThreeDModels\" />
+    <Folder Include="Implements\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Implements\SaveAndLoad.cs" />
+    <Compile Include="Implements\ScreenBrightness.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bg_view_switch.png" />
+    <BundleResource Include="Resources\btn_check.png" />
+    <BundleResource Include="Resources\btn_delete.png" />
+    <BundleResource Include="Resources\btn_download.png" />
+    <BundleResource Include="Resources\btn_menu.png" />
+    <BundleResource Include="Resources\btn_uncheck.png" />
+    <BundleResource Include="Resources\btn_upload.png" />
+    <BundleResource Include="Resources\carousel_mode_light.png" />
+    <BundleResource Include="Resources\carousel_mode.png" />
+    <BundleResource Include="Resources\dashed_line.png" />
+    <BundleResource Include="Resources\grid_mode_light.png" />
+    <BundleResource Include="Resources\grid_mode.png" />
+    <BundleResource Include="Resources\logo.png" />
+    <BundleResource Include="Resources\mode_background.png" />
+    <BundleResource Include="Resources\table_mode_light.png" />
+    <BundleResource Include="Resources\table_mode.png" />
+    <BundleResource Include="Resources\underbar.png" />
+    <BundleResource Include="Resources\view_switch_2.png" />
+    <BundleResource Include="Resources\view1_unclick.png" />
+    <BundleResource Include="Resources\view1.png" />
+    <BundleResource Include="Resources\view2_unclick.png" />
+    <BundleResource Include="Resources\view2.png" />
+    <BundleResource Include="Resources\view3_unclick.png" />
+    <BundleResource Include="Resources\view3.png" />
+    <BundleResource Include="Resources\ThreeDModels\CatStretch_000.png" />
+    <BundleResource Include="Resources\ThreeDModels\Cubic_000.png" />
+    <BundleResource Include="Resources\ThreeDModels\Deer_000.png" />
+    <BundleResource Include="Resources\ThreeDModels\Moai_000.png" />
+    <BundleResource Include="Resources\ThreeDModels\MothersDay_000.png" />
+    <BundleResource Include="Resources\ThreeDModels\OwlStatue_000.png" />
+    <BundleResource Include="Resources\ThreeDModels\Rook_000.png" />
+    <BundleResource Include="Resources\BlackScreen_iPhone7Plus.png" />
+    <BundleResource Include="Resources\icon_dark_unclick.png" />
+    <BundleResource Include="Resources\icon_dark.png" />
+    <BundleResource Include="Resources\icon_light_unclick.png" />
+    <BundleResource Include="Resources\icon_light.png" />
+    <BundleResource Include="Resources\icon_quantity_unclick.png" />
+    <BundleResource Include="Resources\icon_quantity.png" />
+    <BundleResource Include="Resources\icon_size_unclick.png" />
+    <BundleResource Include="Resources\icon_size.png" />
+    <BundleResource Include="Resources\triangle.png" />
+    <BundleResource Include="Resources\Bg_adjust_circle.png" />
+    <BundleResource Include="Resources\Bg_adjust_size.png" />
+    <BundleResource Include="Resources\Bg_adjust.png" />
+    <BundleResource Include="Resources\Btn_ready.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.2.3.4.224\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.224\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+</Project>

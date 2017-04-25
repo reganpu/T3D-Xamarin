@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 xmlns:local="clr-namespace:T3D"
+			 x:Class="T3D.DetailPage"
+			 Title="T3D Gallery"
+			 x:Name="detailPage">
+
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Color x:Key="lightBlue">#5F6160</Color>
+			<OnPlatform x:Key="upperTabColor"
+						x:TypeArguments="Color"
+						iOS="#94d4d4"
+						Android="#94d4d4"/>
+			<OnPlatform x:Key="outlineColor"
+						x:TypeArguments="Color"
+						iOS="#94d4d4"
+						Android="#94d4d4"/>
+			<Style x:Key="buttonStyle" TargetType="Button">
+				 <!--reduce the padding to 29pt-->
+			</Style>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+	<StackLayout Spacing="0">
+		<!--Frame HasShadow="false"
+			   Padding="0"
+			   OutlineColor="{StaticResource outlineColor}">
+		</Frame-->
+		<StackLayout Orientation="Horizontal"
+					 HorizontalOptions="FillAndExpand">
+
+			<!--Label Text="Cloud"
+				   Font="15"
+				   HorizontalTextAlignment="Center"
+				   VerticalTextAlignment="Center"
+			   	   HeightRequest="29"
+				   HorizontalOptions="FillAndExpand"
+				   TextColor="White"
+				   BackgroundColor="{StaticResource upperTabColor}"/>
+			<Label Text="Storage"
+				   Font="15"
+				   HeightRequest="29"
+				   HorizontalTextAlignment="Center"
+				   VerticalTextAlignment="Center"
+				   HorizontalOptions="FillAndExpand"
+				   TextColor="{StaticResource upperTabColor}"
+			   	   BackgroundColor="White"/-->
+
+			<Button x:Name="btnShowCloud"
+					Text="Cloud"
+					Font="13"
+					HeightRequest="29"
+					BorderWidth="0"
+					Margin="0"
+					HorizontalOptions="FillAndExpand"
+					BorderRadius="0"
+					TextColor="{StaticResource upperTabColor}"
+					BackgroundColor="White"
+					Clicked="OnCloud_Clicked"/>
+			<Button x:Name="btnShowStorage"
+					Text="Storage"
+					Font="13"
+					HeightRequest="29"
+					BorderWidth="0"
+					Margin="0"
+					HorizontalOptions="FillAndExpand"
+					BorderRadius="0"
+					TextColor="White"
+					BackgroundColor="{StaticResource upperTabColor}"
+					Clicked="OnStorage_Clicked"/>
+		</StackLayout>
+
+		<Image Source="underbar.png"/>
+
+		<Grid>
+			<local:CloudView x:Name="cloudView" IsVisible="false"/>
+			<local:StorageView x:Name="storageView" IsVisible="true"/>
+		</Grid>
+		
+	</StackLayout>
+	
+	<!--Button Text="Next" Clicked="Handle_Clicked"/-->
+
+</ContentPage>

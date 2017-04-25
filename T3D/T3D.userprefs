@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{375EDEED-09EA-488D-9788-3D8D0F32E775}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="T3D/Pages/MasterPage.xaml" Line="1" Column="1" />
+      <File FileName="T3D/Views/StorageView.xaml" Line="1" Column="1" />
+      <File FileName="T3D/Views/CloudView.xaml" Line="1" Column="1" />
+      <File FileName="T3D/Interfaces/ISaveAndLoad.cs" Line="12" Column="6" />
+      <File FileName="iOS/Implements/SaveAndLoad.cs" Line="9" Column="10" />
+      <File FileName="T3D/Views/CloudView.xaml.cs" Line="72" Column="5" />
+      <File FileName="T3D/Views/StorageView.xaml.cs" Line="17" Column="4" />
+      <File FileName="T3D/T3DPage.xaml.cs" Line="13" Column="1" />
+      <File FileName="T3D/T3DPage.xaml" Line="1" Column="1" />
+      <File FileName="T3D/Models/ItemInTheCloud.cs" Line="9" Column="3" />
+      <File FileName="T3D/Interfaces/IScreenBrightness.cs" Line="8" Column="3" />
+      <File FileName="iOS/Implements/ScreenBrightness.cs" Line="19" Column="53" />
+      <File FileName="T3D/Pages/SliceShowPage.xaml" Line="1" Column="1" />
+      <File FileName="T3D/Pages/SliceShowPage.xaml.cs" Line="35" Column="5" />
+      <File FileName="T3D/Pages/DetailPage.xaml.cs" Line="39" Column="21" />
+      <File FileName="T3D/Pages/DetailPage.xaml" Line="1" Column="1" />
+      <File FileName="T3D/Pages/ParameterSettingPage.xaml" Line="1" Column="1" />
+      <File FileName="T3D/Pages/ParameterSettingPage.xaml.cs" Line="9" Column="3" />
+      <File FileName="T3D/Pages/QRCodeScanPage.xaml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.T3D.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.ItemProperties.T3D.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.CF87521A-33A2-45D3-8B9C-4802501D5424" />
+</Properties>
