@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{375EDEED-09EA-488D-9788-3D8D0F32E775}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="T3D/Views/CloudView.xaml.cs">
     <Files>
       <File FileName="T3D/Pages/MasterPage.xaml" Line="1" Column="1" />
       <File FileName="T3D/Views/StorageView.xaml" Line="1" Column="1" />
-      <File FileName="T3D/Views/CloudView.xaml" Line="1" Column="1" />
+      <File FileName="T3D/Views/CloudView.xaml" Line="8" Column="3" />
       <File FileName="T3D/Interfaces/ISaveAndLoad.cs" Line="12" Column="6" />
       <File FileName="iOS/Implements/SaveAndLoad.cs" Line="9" Column="10" />
-      <File FileName="T3D/Views/CloudView.xaml.cs" Line="72" Column="5" />
+      <File FileName="T3D/Views/CloudView.xaml.cs" Line="64" Column="33" />
       <File FileName="T3D/Views/StorageView.xaml.cs" Line="17" Column="4" />
       <File FileName="T3D/T3DPage.xaml.cs" Line="13" Column="1" />
       <File FileName="T3D/T3DPage.xaml" Line="1" Column="1" />
