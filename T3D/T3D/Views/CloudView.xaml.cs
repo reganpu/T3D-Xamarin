@@ -81,7 +81,7 @@ namespace T3D
 				//downloadSlicesOfSelectedModel();
 
 				/// inform storage to update (Event)
-
+				MessagingCenter.Send(this, "download completed", itemInTheCloud.Name);
 			}
 
 			// test
