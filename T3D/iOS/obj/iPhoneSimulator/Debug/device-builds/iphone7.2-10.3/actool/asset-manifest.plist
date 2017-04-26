@@ -6,7 +6,7 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/regan/T3DVersionControl/v0.1.1/T3D/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/actool/partial-info.plist</string>
+			<string>/Users/regan/test/T3D/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/actool/partial-info.plist</string>
 		</array>
 	</dict>
 </dict>

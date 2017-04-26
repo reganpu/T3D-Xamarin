@@ -2,9 +2,9 @@
 # [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.8.0.175/lib/mtouch/mtouch.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.8.0.175/lib/mtouch/mtouch.exe \
 	--cache \
-	/Users/regan/T3DVersionControl/v0.1.1/T3D/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/mtouch-cache \
+	/Users/regan/test/T3D/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/mtouch-cache \
 	--sim \
-	/Users/regan/T3DVersionControl/v0.1.1/T3D/iOS/bin/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/T3D.iOS.app \
+	/Users/regan/test/T3D/iOS/bin/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/T3D.iOS.app \
 	--executable \
 	T3D.iOS \
 	--fastdev \
@@ -19,7 +19,7 @@
 	--http-message-handler=HttpClientHandler \
 	--abi=x86_64 \
 	--symbollist \
-	/Users/regan/T3DVersionControl/v0.1.1/T3D/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/mtouch-symbols.list \
+	/Users/regan/test/T3D/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/mtouch-symbols.list \
 	--dsym=no \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
@@ -30,15 +30,15 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
 	-r \
-	/Users/regan/T3DVersionControl/v0.1.1/T3D/packages/Xamarin.Forms.2.3.4.224/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	/Users/regan/test/T3D/packages/Xamarin.Forms.2.3.4.224/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \
-	/Users/regan/T3DVersionControl/v0.1.1/T3D/packages/Xamarin.Forms.2.3.4.224/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	/Users/regan/test/T3D/packages/Xamarin.Forms.2.3.4.224/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
 	-r \
-	/Users/regan/T3DVersionControl/v0.1.1/T3D/packages/Xamarin.Forms.2.3.4.224/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	/Users/regan/test/T3D/packages/Xamarin.Forms.2.3.4.224/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
 	-r \
-	/Users/regan/T3DVersionControl/v0.1.1/T3D/packages/Xamarin.Forms.2.3.4.224/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	/Users/regan/test/T3D/packages/Xamarin.Forms.2.3.4.224/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
 	-r \
-	/Users/regan/T3DVersionControl/v0.1.1/T3D/T3D/bin/Debug/T3D.dll \
+	/Users/regan/test/T3D/T3D/bin/Debug/T3D.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	-r \
@@ -304,15 +304,15 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll \
 	-r \
-	/Users/regan/T3DVersionControl/v0.1.1/T3D/packages/Xamarin.Forms.2.3.4.224/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	/Users/regan/test/T3D/packages/Xamarin.Forms.2.3.4.224/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \
-	/Users/regan/T3DVersionControl/v0.1.1/T3D/packages/Xamarin.Forms.2.3.4.224/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	/Users/regan/test/T3D/packages/Xamarin.Forms.2.3.4.224/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
 	-r \
-	/Users/regan/T3DVersionControl/v0.1.1/T3D/packages/Xamarin.Forms.2.3.4.224/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	/Users/regan/test/T3D/packages/Xamarin.Forms.2.3.4.224/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
 	-r \
-	/Users/regan/T3DVersionControl/v0.1.1/T3D/packages/Xamarin.Forms.2.3.4.224/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	/Users/regan/test/T3D/packages/Xamarin.Forms.2.3.4.224/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
 	-r \
-	/Users/regan/T3DVersionControl/v0.1.1/T3D/T3D/bin/Debug/T3D.dll \
+	/Users/regan/test/T3D/T3D/bin/Debug/T3D.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
-	/Users/regan/T3DVersionControl/v0.1.1/T3D/iOS/bin/iPhoneSimulator/Debug/T3D.iOS.exe \
+	/Users/regan/test/T3D/iOS/bin/iPhoneSimulator/Debug/T3D.iOS.exe \

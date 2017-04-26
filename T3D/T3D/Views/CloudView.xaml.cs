@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using Xamarin.Forms;
 using System.Collections.ObjectModel;
+using System.Net.Http;
+using System.Threading.Tasks;
+
 namespace T3D
 {
 	public partial class CloudView : ContentView
@@ -37,7 +40,7 @@ namespace T3D
 
 			//
 			listView.ItemsSource = list;
-			downloadImages();
+			downloadImagesInFileAndCache();
 			//BindingContext = new ItemInTheCloud()
 			//{
 			//	ImageFilePath = path,
@@ -48,18 +51,18 @@ namespace T3D
 			//image.Source = ImageSource.FromStream(() => new MemoryStream(imageAsBytes));
 		}
 
-		void downloadImages()
+		void downloadImagesInFileAndCache()
 		{
 			for (int i = 0; i<fileName.Length; i++)
 			{
 				coverImageAsBytesList.Add(DependencyService.Get<ISaveAndLoad>().GetAByteImageFromWeb(coverImagePath[i]));
 				DependencyService.Get<ISaveAndLoad>().SaveByteImage(fileName[i], modelNumber, fileExtension, coverImageAsBytesList[i]);
-
+				//
 				list.Add(new ItemInTheCloud() { ImageFilePath = coverImagePath[i], Name = fileName[i], Notes = notes[i] });
 			}
 		}
 
-	    void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
+	    async void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
 		{
 			ItemInTheCloud itemInTheCloud = (ItemInTheCloud)e.SelectedItem;
 
@@ -72,7 +75,10 @@ namespace T3D
 								  				bluehostDNS + "/" + fileDirectory + "/" + fileName[0] + "_/" + fileName[0] + "_" + sliceNumber[4] + imageExtension			  
 											  };
 
-				downloadSlicesOfSelectedModel();
+				await GetDataFromHttpClientAsync();
+
+				// 
+				//downloadSlicesOfSelectedModel();
 
 				/// inform storage to update (Event)
 
@@ -82,13 +88,34 @@ namespace T3D
 			//Navigation.PushAsync(new Page());
 		}
 
+		// cannot use async keyword when using WebClient
 		void downloadSlicesOfSelectedModel()
 		{
-			for (int i = 0; i<sliceNumber.Length; i++)
+			for (int i = 0; i < sliceNumber.Length; i++)
+			{
+			    imageAsBytesList.Add(DependencyService.Get<ISaveAndLoad>().GetAByteImageFromWeb(sliceImagePath[i]));
+				DependencyService.Get<ISaveAndLoad>().SaveByteImage(fileName[0], sliceNumber[i], fileExtension, imageAsBytesList[i]);
+			}
+		}
+
+	 	async Task<bool> GetDataFromHttpClientAsync()
+		{
+			HttpClient httpClient = new HttpClient();
+
+			for (int i = 0; i < sliceNumber.Length; i++)
+			{
+				try
 				{
-				    imageAsBytesList.Add(DependencyService.Get<ISaveAndLoad>().GetAByteImageFromWeb(sliceImagePath[i]));
+					imageAsBytesList.Add(await httpClient.GetByteArrayAsync(new Uri(sliceImagePath[i])));
 					DependencyService.Get<ISaveAndLoad>().SaveByteImage(fileName[0], sliceNumber[i], fileExtension, imageAsBytesList[i]);
+
 				}
+				catch (OperationCanceledException)
+				{
+					return false;
+				}
+			}
+			return true;
 		}
 
 	}
