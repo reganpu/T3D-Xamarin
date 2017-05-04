@@ -24,7 +24,7 @@ namespace T3D
 				byte[] byteImage = DependencyService.Get<ISaveAndLoad>().GetAByteImageFromFile(arg, "000");
 				Image modelImage = new Image();
 				modelImage.Source = ImageSource.FromStream(() => new MemoryStream(byteImage)); 
-				list.Add(new ItemInTheCloud() { ModelImageSource = modelImage.Source, Name = arg, Notes = "By abcde" });
+				list.Add(new ItemInTheCloud() { ModelImageSource = modelImage.Source, Name = arg });
 				listView.ItemsSource = list;
 			});
 		}

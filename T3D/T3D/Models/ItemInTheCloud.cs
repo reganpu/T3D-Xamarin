@@ -10,6 +10,7 @@ namespace T3D
 		public ImageSource ModelImageSource { get; set; }
 		public string Name { get; set; }
 		public string Notes { get; set; }
+		public double Progress { get; set; }
 		public bool Chosen { get; set; }
 
 		public ItemInTheCloud()
