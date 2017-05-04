@@ -42,6 +42,7 @@ namespace T3D
 		protected override void OnAppearing()
 		{
 			//listView.SelectedItem = null;
+
 		}
 	}
 }

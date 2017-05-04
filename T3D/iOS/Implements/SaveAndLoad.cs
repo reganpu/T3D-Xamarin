@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using System.IO;
-using System.Net;
+//using System.Net;
 
 using System.Text;
 using System.Threading.Tasks;
@@ -33,13 +33,13 @@ namespace T3D.iOS
 
 		#region ISaveAndLoad implementation
 
-		public byte[] GetAByteImageFromWeb(string path)
-		{
-			// "http://140.118.198.70:8080/walk3dprinter/slice/OwlStatue_/OwlStatue_000.png"
-			var webClient = new WebClient();
-			byte[] imageBytes = webClient.DownloadData(path);
-			return imageBytes;
-		}
+		//public byte[] GetAByteImageFromWeb(string path)
+		//{
+		//	// "http://140.118.198.70:8080/walk3dprinter/slice/OwlStatue_/OwlStatue_000.png"
+		//	var webClient = new WebClient();
+		//	byte[] imageBytes = webClient.DownloadData(path);
+		//	return imageBytes;
+		//}
 
 		public byte[] GetAByteImageFromFile(string fileName, string fileNumber)
 		{

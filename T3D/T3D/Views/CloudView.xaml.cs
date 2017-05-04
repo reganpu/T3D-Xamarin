@@ -39,8 +39,9 @@ namespace T3D
 			//string path = "http://140.118.198.70:8080/walk3dprinter/slice/OwlStatue_/OwlStatue_000.png";
 
 			//
-			listView.ItemsSource = list;
-			downloadImagesInFileAndCache();
+			//listView.ItemsSource = list;
+			//downloadImagesInFileAndCache();
+			StoreCoverImagesInCacheAndFileUsingHttpClientAsync();
 			//BindingContext = new ItemInTheCloud()
 			//{
 			//	ImageFilePath = path,
@@ -51,15 +52,37 @@ namespace T3D
 			//image.Source = ImageSource.FromStream(() => new MemoryStream(imageAsBytes));
 		}
 
-		void downloadImagesInFileAndCache()
+		//void downloadImagesInFileAndCache()
+		//{
+		//	for (int i = 0; i<fileName.Length; i++)
+		//	{
+		//		coverImageAsBytesList.Add(DependencyService.Get<ISaveAndLoad>().GetAByteImageFromWeb(coverImagePath[i]));
+		//		DependencyService.Get<ISaveAndLoad>().SaveByteImage(fileName[i], modelNumber, fileExtension, coverImageAsBytesList[i]);
+		//		//
+		//		list.Add(new ItemInTheCloud() { ImageFilePath = coverImagePath[i], Name = fileName[i], Notes = notes[i] });
+		//	}
+		//}
+
+		async Task<bool> StoreCoverImagesInCacheAndFileUsingHttpClientAsync()
 		{
-			for (int i = 0; i<fileName.Length; i++)
+			HttpClient httpClient = new HttpClient();
+
+			for (int i = 0; i < sliceNumber.Length; i++)
 			{
-				coverImageAsBytesList.Add(DependencyService.Get<ISaveAndLoad>().GetAByteImageFromWeb(coverImagePath[i]));
-				DependencyService.Get<ISaveAndLoad>().SaveByteImage(fileName[i], modelNumber, fileExtension, coverImageAsBytesList[i]);
-				//
-				list.Add(new ItemInTheCloud() { ImageFilePath = coverImagePath[i], Name = fileName[i], Notes = notes[i] });
+				try
+				{
+					coverImageAsBytesList.Add(await httpClient.GetByteArrayAsync(new Uri(coverImagePath[i])));
+					DependencyService.Get<ISaveAndLoad>().SaveByteImage(fileName[i], modelNumber, fileExtension, coverImageAsBytesList[i]);
+					//
+					list.Add(new ItemInTheCloud() { ImageFilePath = coverImagePath[i], Name = fileName[i], Notes = notes[i] });
+					listView.ItemsSource = list;
+				}
+				catch (OperationCanceledException)
+				{
+					return false;
+				}
 			}
+			return true;
 		}
 
 	    async void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
@@ -89,14 +112,14 @@ namespace T3D
 		}
 
 		// cannot use async keyword when using WebClient
-		void downloadSlicesOfSelectedModel()
-		{
-			for (int i = 0; i < sliceNumber.Length; i++)
-			{
-			    imageAsBytesList.Add(DependencyService.Get<ISaveAndLoad>().GetAByteImageFromWeb(sliceImagePath[i]));
-				DependencyService.Get<ISaveAndLoad>().SaveByteImage(fileName[0], sliceNumber[i], fileExtension, imageAsBytesList[i]);
-			}
-		}
+		//void downloadSlicesOfSelectedModel()
+		//{
+		//	for (int i = 0; i < sliceNumber.Length; i++)
+		//	{
+		//	    imageAsBytesList.Add(DependencyService.Get<ISaveAndLoad>().GetAByteImageFromWeb(sliceImagePath[i]));
+		//		DependencyService.Get<ISaveAndLoad>().SaveByteImage(fileName[0], sliceNumber[i], fileExtension, imageAsBytesList[i]);
+		//	}
+		//}
 
 	 	async Task<bool> GetDataFromHttpClientAsync()
 		{
@@ -108,7 +131,6 @@ namespace T3D
 				{
 					imageAsBytesList.Add(await httpClient.GetByteArrayAsync(new Uri(sliceImagePath[i])));
 					DependencyService.Get<ISaveAndLoad>().SaveByteImage(fileName[0], sliceNumber[i], fileExtension, imageAsBytesList[i]);
-
 				}
 				catch (OperationCanceledException)
 				{

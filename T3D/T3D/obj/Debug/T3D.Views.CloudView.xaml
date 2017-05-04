@@ -75,7 +75,8 @@
 		<ScrollView Padding="0, 16, 0, 0">
 			<!-- HasUnevenRows="true" -->
 			<ListView x:Name="listView"  Margin="18.75,0, 18.75,0" RowHeight="100"
-					  ItemSelected="Handle_ItemSelected">
+					  ItemSelected="Handle_ItemSelected"
+					  >
 				<ListView.ItemTemplate>
 					<DataTemplate>
 						<ViewCell>
