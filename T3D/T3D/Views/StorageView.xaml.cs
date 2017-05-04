@@ -31,8 +31,12 @@ namespace T3D
 
 		void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
 		{
+			byte[] byteImage = DependencyService.Get<ISaveAndLoad>().GetAByteImageFromFile(((ItemInTheCloud)e.SelectedItem).Name, "000");
+			Image modelImage = new Image();
+			modelImage.Source = ImageSource.FromStream(() => new MemoryStream(byteImage)); 
+
 			//Navigation.PushAsync(new SliceShowPage());
-			Navigation.PushAsync(new ParameterSettingPage());
+			Navigation.PushAsync(new ParameterSettingPage(modelImage.Source));
 			//listView.SelectedItem = null;
 		}
 

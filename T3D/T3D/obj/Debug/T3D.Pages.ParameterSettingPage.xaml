@@ -5,8 +5,8 @@
 			 Title="Print">
 	<StackLayout Spacing="0">
 
-		<Image HeightRequest="216" WidthRequest="375" 
-			   Source="ThreeDModels/Moai_000.png" 
+		<Image x:Name="image"
+			   HeightRequest="216" WidthRequest="375" 
 			   Aspect="Fill" 
 			   HorizontalOptions="Fill" 
 			   VerticalOptions="Fill"

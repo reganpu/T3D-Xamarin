@@ -11,8 +11,11 @@
 namespace T3D {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/regan/test/T3D/T3D/Pages/ParameterSettingPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/regan/T3D Developing/T3D/T3D/Pages/ParameterSettingPage.xaml")]
     public partial class ParameterSettingPage : global::Xamarin.Forms.ContentPage {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Image image;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Slider slider;
@@ -20,6 +23,7 @@ namespace T3D {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ParameterSettingPage));
+            image = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Image>(this, "image");
             slider = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Slider>(this, "slider");
         }
     }

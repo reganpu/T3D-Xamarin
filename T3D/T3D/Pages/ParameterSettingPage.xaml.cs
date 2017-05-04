@@ -12,6 +12,12 @@ namespace T3D
 			InitializeComponent();
 		}
 
+		public ParameterSettingPage(ImageSource imageSource)
+		{
+            InitializeComponent();
+			image.Source = imageSource;
+		}
+
 		void Handle_Clicked(object sender, System.EventArgs e)
 		{
 			Navigation.PushAsync(new SliceShowPage());
