@@ -7,7 +7,7 @@
 		<AbsoluteLayout HorizontalOptions="Center">
 
 			<StackLayout HorizontalOptions="Center"
-						 Padding="0, 14, 0, 0">
+						 Padding="0, 16, 0, 0">
 				<Image Source="bg_view_switch"
 					   WidthRequest="151"
 					   HeightRequest="21"/>
@@ -15,7 +15,7 @@
 
 			<StackLayout Orientation="Horizontal"
 						 HorizontalOptions="Center"
-						 Padding="0, 14, 0, 0"
+						 Padding="0, 16, 0, 0"
 						 Spacing="0"
 						 IsVisible="false">
 				<Button Image="view1"
@@ -34,7 +34,7 @@
 			
 			<StackLayout Orientation="Horizontal"
 						 HorizontalOptions="Center"
-						 Padding="0, 14, 0, 0"
+						 Padding="0, 16, 0, 0"
 						 Spacing="0">
 				<Button Image="view1_unclick"
 						WidthRequest="50"
@@ -52,7 +52,7 @@
 
 			<StackLayout Orientation="Horizontal"
 						 HorizontalOptions="Center"
-						 Padding="0, 14, 0, 0"
+						 Padding="0, 16, 0, 0"
 						 Spacing="0"
 						 IsVisible="false">
 				<Button Image="view1_unclick"
@@ -76,22 +76,50 @@
 			<!-- HasUnevenRows="true" -->
 			<ListView x:Name="listView"  Margin="18.75,0, 18.75,0" RowHeight="100"
 					  ItemSelected="Handle_ItemSelected"
-					  >
+					  IsPullToRefreshEnabled="true">
 				<ListView.ItemTemplate>
 					<DataTemplate>
 						<ViewCell>
+
+							<Grid>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="100*"/>
+									<ColumnDefinition Width="219*"/>
+								</Grid.ColumnDefinitions>
+
+								<Image Grid.Column="0" Source="{Binding ImageFilePath}" Margin="5" Aspect="Fill"/>
+
+								<Grid Padding="9,0,0,0" Grid.Column="1">
+									<Grid.RowDefinitions>
+										<RowDefinition Height="51*"/>
+										<RowDefinition Height="36*"/>
+										<RowDefinition Height="4"/>
+										<RowDefinition Height="13"/>
+									</Grid.RowDefinitions>
+
+									<Label Grid.Row="0" Text="{Binding Name}" TextColor="#94d4d4" Font="17"
+										   VerticalTextAlignment="End" HorizontalTextAlignment="Start"/>
+									<Label Grid.Row="1" Text="{Binding Notes}" TextColor="Gray" Font="15"
+										   Margin="0,7,0,0"/>
+									<Image Grid.Row="2" Source="dashed_line.png" Aspect="Fill"/>
+									<ProgressBar Grid.Row="3" Progress="{Binding Progress}"/>
+									<Label Grid.Row="3" Text="http://www.thingiverse.com" FontSize="6" TextColor="#bfbfbf"
+										   Margin="0,-0.5,5,0" HorizontalTextAlignment="End" VerticalOptions="Center"/>
+								</Grid>
+
+							</Grid>
 							
-							<StackLayout Orientation="Horizontal">
+							<!--StackLayout Orientation="Horizontal">
 								
 								<Image Source="{Binding ImageFilePath}" HorizontalOptions="Start" WidthRequest="90"/>
 
 								<StackLayout Orientation="Vertical" Margin="10, 20, 0, 0" HorizontalOptions="FillAndExpand">
-									<Label Text="{Binding Name}" TextColor="#94d4d4" Font="20"/>
-									<Label Text="{Binding Notes}" TextColor="Gray" Font="16"/>
+									<Label Text="{Binding Name}" TextColor="#94d4d4" Font="17"/>
+									<Label Text="{Binding Notes}" TextColor="Gray" Font="15"/>
 									<ProgressBar Progress="{Binding Progress}"/>
 								</StackLayout>
 
-							</StackLayout>
+							</StackLayout-->
 							
 						</ViewCell>
 					</DataTemplate>

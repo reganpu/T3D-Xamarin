@@ -131,7 +131,12 @@ namespace T3D
 
 	    async void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
 		{
+			if (((ListView)sender).SelectedItem == null)
+				return;
+			
 			ItemInTheCloud itemInTheCloud = (ItemInTheCloud)e.SelectedItem;
+			await DownloadSlicesOfSelectedModelAsync(itemInTheCloud.Name);
+
 
 			//sliceImagePath = new string[] { bluehostDNS + "/" + fileDirectory + "/" + coverImageNamesOneByOne[0] + "_/" + coverImageNamesOneByOne[0] + "_" + sliceNumber[0] + imageExtension,
 			//				  				bluehostDNS + "/" + fileDirectory + "/" + coverImageNamesOneByOne[0] + "_/" + coverImageNamesOneByOne[0] + "_" + sliceNumber[1] + imageExtension,
@@ -140,8 +145,7 @@ namespace T3D
 			//				  				bluehostDNS + "/" + fileDirectory + "/" + coverImageNamesOneByOne[0] + "_/" + coverImageNamesOneByOne[0] + "_" + sliceNumber[4] + imageExtension			  
 			//							  };
 
-			await DownloadSlicesOfSelectedModelAsync(itemInTheCloud.Name);
-
+			((ListView)sender).SelectedItem = null;
 			// 
 			//downloadSlicesOfSelectedModel();
 

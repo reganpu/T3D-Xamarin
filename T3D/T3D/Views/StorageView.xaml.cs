@@ -42,7 +42,10 @@ namespace T3D
 
 		void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
 		{
-			string name = ((ItemInTheCloud)e.SelectedItem).Name;
+			if (((ListView)sender).SelectedItem == null)
+				return;
+
+			string name = ((ItemInTheCloud)e.SelectedItem).Name; 
 			byte[] byteImage = DependencyService.Get<ISaveAndLoad>().GetAByteImageFromFile(name, "000");
 			Image modelImage = new Image();
 			modelImage.Source = ImageSource.FromStream(() => new MemoryStream(byteImage)); 
@@ -50,6 +53,7 @@ namespace T3D
 			//Navigation.PushAsync(new SliceShowPage());
 			Navigation.PushAsync(new ParameterSettingPage(modelImage.Source, name));
 			//listView.SelectedItem = null;
+			((ListView)sender).SelectedItem = null;
 		}
 
 		void Handle_Clicked(object sender, System.EventArgs e)

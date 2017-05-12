@@ -23,15 +23,21 @@
 		</ResourceDictionary>
 	</ContentPage.Resources>
 
-	<StackLayout Spacing="0">
+	<Grid RowSpacing="0">
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height="44*"/>
+			<RowDefinition Height="2"/>
+			<RowDefinition Height="574*"/>
+		</Grid.RowDefinitions>
 		<!--Frame HasShadow="false"
 			   Padding="0"
 			   OutlineColor="{StaticResource outlineColor}">
 		</Frame-->
-		<StackLayout Orientation="Horizontal"
+		<!--StackLayout Orientation="Horizontal"
 					 HorizontalOptions="FillAndExpand">
 
-			<!--Label Text="Cloud"
+			<Label Text="Cloud"
 				   Font="15"
 				   HorizontalTextAlignment="Center"
 				   VerticalTextAlignment="Center"
@@ -46,40 +52,48 @@
 				   VerticalTextAlignment="Center"
 				   HorizontalOptions="FillAndExpand"
 				   TextColor="{StaticResource upperTabColor}"
-			   	   BackgroundColor="White"/-->
+			   	   BackgroundColor="White"/>
+			
+		</StackLayout-->
+		<!-- Height="44" -->
+		<Grid Grid.Row="0">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
 
-			<Button x:Name="btnShowCloud"
-					Text="Cloud"
-					Font="13"
-					HeightRequest="29"
-					BorderWidth="0"
-					Margin="0"
-					HorizontalOptions="FillAndExpand"
-					BorderRadius="0"
-					TextColor="{StaticResource upperTabColor}"
-					BackgroundColor="White"
-					Clicked="OnCloud_Clicked"/>
-			<Button x:Name="btnShowStorage"
-					Text="Storage"
-					Font="13"
-					HeightRequest="29"
-					BorderWidth="0"
-					Margin="0"
-					HorizontalOptions="FillAndExpand"
-					BorderRadius="0"
-					TextColor="White"
-					BackgroundColor="{StaticResource upperTabColor}"
-					Clicked="OnStorage_Clicked"/>
-		</StackLayout>
+				<Button Grid.Column="0"
+						x:Name="btnShowCloud"
+						Text="Cloud"
+						Font="17"
+						BorderWidth="0"
+						Margin="0"
+						HorizontalOptions="FillAndExpand"
+						BorderRadius="0"
+						TextColor="White"
+						BackgroundColor="{StaticResource upperTabColor}"
+						Clicked="OnCloud_Clicked"/>
+				<Button Grid.Column="1"
+						x:Name="btnShowStorage"
+						Text="Storage"
+						Font="17"
+						BorderWidth="0"
+						Margin="0"
+						HorizontalOptions="FillAndExpand"
+						BorderRadius="0"
+						TextColor="{StaticResource upperTabColor}"
+						BackgroundColor="White"
+						Clicked="OnStorage_Clicked"/>
+			</Grid>
+		
+		<Image Grid.Row="1" Source="underbar.png"/>
 
-		<Image Source="underbar.png"/>
-
-		<Grid>
-			<local:CloudView x:Name="cloudView" IsVisible="false"/>
-			<local:StorageView x:Name="storageView" IsVisible="true"/>
+		<Grid Grid.Row="2">
+			<local:CloudView x:Name="cloudView" IsVisible="true"/>
+			<local:StorageView x:Name="storageView" IsVisible="false"/>
 		</Grid>
 		
-	</StackLayout>
+	</Grid>
 	
 	<!--Button Text="Next" Clicked="Handle_Clicked"/-->
 

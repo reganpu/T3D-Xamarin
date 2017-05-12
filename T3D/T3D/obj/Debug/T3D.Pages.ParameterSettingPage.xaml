@@ -75,7 +75,7 @@
 				
 				<Grid ColumnSpacing="0" Grid.Row="1">
 					<Grid.ColumnDefinitions>
-						<ColumnDefinition Width="265*"/>
+						<ColumnDefinition Width="200*"/>
 						<ColumnDefinition Width="60*"/>
 					</Grid.ColumnDefinitions>
 
@@ -84,26 +84,21 @@
 
 					<Grid ColumnSpacing="0" Grid.Column="1">
 						<Grid.ColumnDefinitions>
-							<ColumnDefinition Width="1.5*"/>
+							<ColumnDefinition Width="1.3*"/>
 							<ColumnDefinition Width="1*"/>
 						</Grid.ColumnDefinitions>
 
-						<Label Grid.Column="0" Text="100" VerticalTextAlignment="Center"
+						<Label Grid.Column="0" Text="{Binding Source={x:Reference Name=slider}, Path=Value, StringFormat='{0:F0}'}" 
+							   VerticalTextAlignment="Center" HorizontalTextAlignment="End"
 							   FontSize="24" TextColor="#455472"/>
 						<Label Grid.Column="1" Text="%" VerticalTextAlignment="Center"
 							   FontSize="24" TextColor="#455472"/>
 					</Grid>
-					
 				</Grid>
-
 			</Grid>
-	
-		
-			<Button Grid.Row="1" Image="Btn_ready.png" 
-					
-					Clicked="Handle_Clicked"/>
 			
-
+			<Button Grid.Row="1" Image="Btn_ready.png" 
+					Clicked="Handle_Clicked"/>
 		</Grid>
 
 

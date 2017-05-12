@@ -11,7 +11,7 @@
 namespace T3D {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/regan/T3DVersionControl/v0.3.1 RefineCloud_Parameter_SliceShow/T3D/T3D/Pages/SliceShowPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/regan/T3D Developing/T3D/T3D/Pages/SliceShowPage.xaml")]
     public partial class SliceShowPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
