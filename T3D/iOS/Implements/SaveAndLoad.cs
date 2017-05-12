@@ -6,6 +6,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using T3D.iOS;
+using System.Collections.Generic;
 
 [assembly: Dependency(typeof(SaveAndLoad))]
 
@@ -20,15 +21,15 @@ namespace T3D.iOS
 
 		//public static string DocumentsPath
 		//{
-			//get
-			//{
-				// new
-				//string docFolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-				//return docFolder;
-				// old
-				//var documentsDirUrl = NSFileManager.DefaultManager.GetUrls(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomain.User).Last();
-				//return documentsDirUrl.Path;
-			//}
+		//get
+		//{
+		// new
+		//string docFolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+		//return docFolder;
+		// old
+		//var documentsDirUrl = NSFileManager.DefaultManager.GetUrls(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomain.User).Last();
+		//return documentsDirUrl.Path;
+		//}
 		//}
 
 		#region ISaveAndLoad implementation
@@ -41,16 +42,42 @@ namespace T3D.iOS
 		//	return imageBytes;
 		//}
 
+
+		public bool IsSliceImageExist(string name, string number)
+		{
+			string docFolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+			string sliceFolder = docFolder + "/Slices";
+
+			return File.Exists(sliceFolder + "/" + name + "/" + name + "_" + number + ".txt");
+		}
+
+		//public IEnumerable<string> GetImageFolderDirectories()
+		public string[] GetImageFolderDirectories()
+		{
+			string docFolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+			string sliceFolder = docFolder + "/Slices";
+			//return Directory.EnumerateDirectories(docFolder);
+			if (Directory.Exists(sliceFolder))
+			{
+				return Directory.GetDirectories(sliceFolder);
+			}
+			else
+			{
+				string[] temp = { "Not Exist" };
+				return temp;
+			}
+		}
+
 		public byte[] GetAByteImageFromFile(string fileName, string fileNumber)
 		{
 			string fileExtension = ".txt";
-			string path = CreatePathToFile(fileName, fileNumber, fileExtension);
+			string path = GetFilePath(fileName, fileNumber, fileExtension);
 			return File.ReadAllBytes(path);
 		}
 
 		public void SaveByteImage(string fileName, string fileNumber, string fileExtension, byte[] imageBytes)
 		{
-			string path = CreatePathToFile(fileName, fileNumber, fileExtension);
+			string path = GetFilePath(fileName, fileNumber, fileExtension);
 			File.WriteAllBytes(path, imageBytes);
 
 			// <sol 1: return async Task>
@@ -78,7 +105,7 @@ namespace T3D.iOS
 		public async Task<string> LoadTextAsync(string fileName, string fileNumber)
 		{
 			string fileExtension = ".txt";
-			string path = CreatePathToFile(fileName, fileNumber, fileExtension);
+			string path = GetFilePath(fileName, fileNumber, fileExtension);
 			using (StreamReader sr = File.OpenText(path))
 				return await sr.ReadToEndAsync();
 		}
@@ -90,9 +117,10 @@ namespace T3D.iOS
 
 		#endregion
 
-		public string CreatePathToFile(string fileName, string fileNumber, string fileExtension)
+		public string GetFilePath(string fileName, string fileNumber, string fileExtension)
 		{
 			string docFolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+			docFolder = docFolder + "/Slices";
 			string imageFolder = Path.Combine(docFolder, fileName);
 			if (!Directory.Exists(imageFolder))
 			{

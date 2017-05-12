@@ -18,20 +18,15 @@ namespace T3D
 		string fileExtension = ".txt";
 		string imageExtension = ".png";
 
-
 		string[] coverImageNames;
 		List<string> coverImageNamesOneByOne = new List<string>();
 		List<string> coverImagePath = new List<string>();
 
-		//string[] fileName = { "Moai", "Cube", "T3D" };
-
-		//string[] notes = { "By abcde", "By fghijk", "By T3D" };
-
-
 		List<byte[]> coverImageAsBytesList = new List<byte[]>();
 		ObservableCollection<ItemInTheCloud> ItemCollection = new ObservableCollection<ItemInTheCloud>();
 
-		//string[] sliceNumber = { "001", "002", "003", "004", "005"};
+		//string[] fileName = { "Moai", "Cube", "T3D" };
+		//string[] notes = { "By abcde", "By fghijk", "By T3D" };	//string[] sliceNumber = { "001", "002", "003", "004", "005"};
 		//string[] sliceImagePath;
 		// save slice images to files as byte array 
 		List<byte[]> imageAsBytesList = new List<byte[]>();
@@ -42,7 +37,9 @@ namespace T3D
 
 			//listView.ItemsSource = list;
 
-			GetNamesOfAllTheCoverImages();
+			// 待搬離到類似OnAppearing()的地方，才能用Await，才能把接下來的流程分離
+			GetNamesOfAllCoverImagesByAccessingAServerPHPFile();
+
             //GetPathsOfAllTheCoverImages();
 			//coverImagePath= new string[] { bluehostDNS + "/" + fileDirectory + "/" + fileName[0] + "_/" + fileName[0] + "_" + modelNumber + imageExtension,
 			//			  	  	  		   bluehostDNS + "/" + fileDirectory + "/" + fileName[1] + "_/" + fileName[1] + "_" + modelNumber + imageExtension,
@@ -68,6 +65,7 @@ namespace T3D
 			//image.Source = ImageSource.FromStream(() => new MemoryStream(imageAsBytes));
 		}
 
+
 		//void downloadImagesInFileAndCache()
 		//{
 		//	for (int i = 0; i<fileName.Length; i++)
@@ -79,19 +77,29 @@ namespace T3D
 		//	}
 		//}
 
-		async Task<bool> GetNamesOfAllTheCoverImages()
+		async Task<bool> GetNamesOfAllCoverImagesByAccessingAServerPHPFile()
 		{
 			string uri = bluehostDNS + "/" + phpFileName;
 			HttpClient httpClient = new HttpClient();
-			string concatenatingNames = await httpClient.GetStringAsync(uri);
-			// 2n, n = 0, 1(empty), 2, 3(empty), ...
-			coverImageNames = concatenatingNames.Split('_', ',');
+			HttpResponseMessage httpResponseMessage = await httpClient.GetAsync(uri);
+			if (httpResponseMessage.StatusCode != HttpStatusCode.NotFound)
+			{
+				string concatenatingNames = await httpClient.GetStringAsync(uri);
+				// 2n, n = 0, 1(empty), 2, 3(empty), ...
+				coverImageNames = concatenatingNames.Split('_', ',');
 
-            GetPathsOfAllTheCoverImages();
+				//待抽離
+				SetCoverImagePathsAndNamesToGlobalVariables();
+			}
+			else
+			{
+				// Pop up Wifi connection reminder
+			}
+
 			return true;
 		}
 
-		void GetPathsOfAllTheCoverImages()
+		void SetCoverImagePathsAndNamesToGlobalVariables()
 		{
 			for (int i = 0; i < coverImageNames.Length; i = i + 2)
 			{

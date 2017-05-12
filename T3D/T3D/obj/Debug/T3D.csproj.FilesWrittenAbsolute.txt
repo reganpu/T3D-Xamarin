@@ -1,26 +1,26 @@
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile111.AssemblyAttribute.cs
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.App.xaml
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.T3DPage.xaml
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.Pages.MasterPage.xaml
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.Pages.DetailPage.xaml
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.Pages.QRCodeScanPage.xaml
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.Pages.ParameterSettingPage.xaml
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.Views.StorageView.xaml
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.Views.CloudView.xaml
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.Pages.SliceShowPage.xaml
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.App.xaml.g.cs
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.T3DPage.xaml.g.cs
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.Pages.MasterPage.xaml.g.cs
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.Pages.DetailPage.xaml.g.cs
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.Pages.QRCodeScanPage.xaml.g.cs
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.Pages.ParameterSettingPage.xaml.g.cs
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.Views.StorageView.xaml.g.cs
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.Views.CloudView.xaml.g.cs
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.Pages.SliceShowPage.xaml.g.cs
-/Users/regan/T3D Developing/T3D/T3D/bin/Debug/T3D.dll.mdb
-/Users/regan/T3D Developing/T3D/T3D/bin/Debug/T3D.dll
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.dll
-/Users/regan/T3D Developing/T3D/T3D/obj/Debug/T3D.dll.mdb
-/Users/regan/T3D Developing/T3D/T3D/bin/Debug/Xamarin.Forms.Core.dll
-/Users/regan/T3D Developing/T3D/T3D/bin/Debug/Xamarin.Forms.Platform.dll
-/Users/regan/T3D Developing/T3D/T3D/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile111.AssemblyAttribute.cs
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.App.xaml
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.T3DPage.xaml
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.Pages.MasterPage.xaml
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.Pages.DetailPage.xaml
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.Pages.QRCodeScanPage.xaml
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.Pages.ParameterSettingPage.xaml
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.Views.StorageView.xaml
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.Views.CloudView.xaml
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.Pages.SliceShowPage.xaml
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.App.xaml.g.cs
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.T3DPage.xaml.g.cs
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.Pages.MasterPage.xaml.g.cs
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.Pages.DetailPage.xaml.g.cs
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.Pages.QRCodeScanPage.xaml.g.cs
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.Pages.ParameterSettingPage.xaml.g.cs
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.Views.StorageView.xaml.g.cs
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.Views.CloudView.xaml.g.cs
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.Pages.SliceShowPage.xaml.g.cs
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/bin/Debug/T3D.dll.mdb
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/bin/Debug/T3D.dll
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.dll
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/obj/Debug/T3D.dll.mdb
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/bin/Debug/Xamarin.Forms.Core.dll
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/T3D/bin/Debug/Xamarin.Forms.Xaml.dll

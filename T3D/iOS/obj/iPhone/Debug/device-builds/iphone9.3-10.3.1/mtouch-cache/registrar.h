@@ -21,8 +21,8 @@
 @class __MonoMac_NSActionDispatcher;
 @class __Xamarin_NSTimerActionDispatcher;
 @class __MonoMac_NSAsyncActionDispatcher;
-@protocol UIPickerViewModel;
 @class UIKit_UIControlEventProxy;
+@protocol UIPickerViewModel;
 @class Xamarin_Forms_Platform_iOS_FormsApplicationDelegate;
 @class AppDelegate;
 @class UIKit_UITextField__UITextFieldDelegate;
@@ -37,11 +37,11 @@
 @class __NSObject_Disposer;
 @class __UILongPressGestureRecognizer;
 @class UIKit_UINavigationBar_UINavigationBarAppearance;
-@class __UIPanGestureRecognizer;
 @class UIKit_UIBarButtonItem_Callback;
-@class __UIPinchGestureRecognizer;
 @class __UIRotationGestureRecognizer;
 @class __UITapGestureRecognizer;
+@class __UIPanGestureRecognizer;
+@class __UIPinchGestureRecognizer;
 @class __UISwipeGestureRecognizer;
 @class __UIScreenEdgePanGestureRecognizer;
 @class UIKit_UISearchBar__UISearchBarDelegate;

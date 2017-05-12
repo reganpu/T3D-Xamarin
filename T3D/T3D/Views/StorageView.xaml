@@ -11,9 +11,15 @@
 	</ContentView.Resources>
 
 
-	<StackLayout>
+	<Grid>
 
-		<AbsoluteLayout HorizontalOptions="Center">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="137*"/>
+			<RowDefinition Height="1300*"/>
+			<RowDefinition Height="185*"/>
+		</Grid.RowDefinitions>
+
+		<AbsoluteLayout Grid.Row="0" HorizontalOptions="Center">
 
 			<StackLayout HorizontalOptions="Center"
 						 Padding="0, 16, 0, 0">
@@ -80,11 +86,10 @@
 
 		</AbsoluteLayout>
 
-		<ScrollView Padding="0, 16, 0, 0">
+		<ScrollView Grid.Row="1" Padding="0, 16, 0, 0">
 			<!-- HasUnevenRows="true" -->
 			<ListView x:Name="listView"  Margin="18.75,0, 18.75,0" RowHeight="100"
 					  ItemSelected="Handle_ItemSelected">
-				
 				
 				<ListView.ItemTemplate>
 					<DataTemplate>
@@ -150,12 +155,10 @@
 			</ListView>
 		</ScrollView>
 		
-		<Button Image="btn_delete.png" 
-				WidthRequest="33"
+		<Button Grid.Row="2" Image="btn_delete.png" 
+				VerticalOptions="Center"
 				HeightRequest="33"
-				Margin="0, 30, 0, 30"
 				Clicked="Handle_Clicked"/>
-		
-	</StackLayout>
+	</Grid>
 	
 </ContentView>

@@ -47,6 +47,15 @@
 /Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Bg_adjust.png
 /Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Btn_ready.png
 /Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/dashed_line.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/All.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_animals.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_architecture.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_characters.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_food.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_other.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_tools.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_toys.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_transports.png
 /Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/
 /Users/regan/T3D Developing/T3D/iOS/bin/iPhone/Release/T3D.iOS.exe.mdb
 /Users/regan/T3D Developing/T3D/iOS/bin/iPhone/Release/T3D.iOS.exe
@@ -57,12 +66,70 @@
 /Users/regan/T3D Developing/T3D/iOS/bin/iPhone/Release/Xamarin.Forms.Platform.iOS.dll
 /Users/regan/T3D Developing/T3D/iOS/bin/iPhone/Release/Xamarin.Forms.Xaml.dll
 /Users/regan/T3D Developing/T3D/iOS/bin/iPhone/Release/T3D.dll
-/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/All.png
-/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_animals.png
-/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_architecture.png
-/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_characters.png
-/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_food.png
-/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_other.png
-/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_tools.png
-/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_toys.png
-/Users/regan/T3D Developing/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_transports.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/actool/_PartialAppManifest.items
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/actool/_BundleResourceWithLogicalName.items
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/bg_view_switch.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/btn_check.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/btn_delete.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/btn_download.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/btn_menu.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/btn_uncheck.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/btn_upload.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/carousel_mode_light.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/carousel_mode.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/grid_mode_light.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/grid_mode.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/logo.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/mode_background.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/table_mode_light.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/table_mode.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/underbar.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/view_switch_2.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/view1_unclick.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/view1.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/view2_unclick.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/view2.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/view3_unclick.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/view3.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/ThreeDModels/CatStretch_000.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/ThreeDModels/Cubic_000.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/ThreeDModels/Deer_000.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/ThreeDModels/Moai_000.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/ThreeDModels/MothersDay_000.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/ThreeDModels/OwlStatue_000.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/ThreeDModels/Rook_000.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/BlackScreen_iPhone7Plus.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/icon_dark_unclick.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/icon_dark.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/icon_light_unclick.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/icon_light.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/icon_quantity_unclick.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/icon_quantity.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/icon_size_unclick.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/icon_size.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/triangle.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/Bg_adjust_circle.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/Bg_adjust_size.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/Bg_adjust.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/Btn_ready.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/dashed_line.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/Categories/All.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_animals.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_architecture.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_characters.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_food.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_other.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_tools.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_toys.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/Categories/icon_transports.png
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/optimized/
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/bin/iPhone/Release/T3D.iOS.exe.mdb
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/bin/iPhone/Release/T3D.iOS.exe
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/T3D.iOS.exe
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/obj/iPhone/Release/T3D.iOS.exe.mdb
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/bin/iPhone/Release/Xamarin.Forms.Core.dll
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/bin/iPhone/Release/Xamarin.Forms.Platform.dll
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/bin/iPhone/Release/Xamarin.Forms.Platform.iOS.dll
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/bin/iPhone/Release/Xamarin.Forms.Xaml.dll
+/Users/regan/T3DVersionControl/v0.2.3 Off-Line Display/T3D/iOS/bin/iPhone/Release/T3D.dll
