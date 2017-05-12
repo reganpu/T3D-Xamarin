@@ -85,9 +85,10 @@
 								
 								<Image Source="{Binding ImageFilePath}" HorizontalOptions="Start" WidthRequest="90"/>
 
-								<StackLayout Orientation="Vertical" Margin="10, 20, 0, 0">
+								<StackLayout Orientation="Vertical" Margin="10, 20, 0, 0" HorizontalOptions="FillAndExpand">
 									<Label Text="{Binding Name}" TextColor="#94d4d4" Font="20"/>
 									<Label Text="{Binding Notes}" TextColor="Gray" Font="16"/>
+									<ProgressBar Progress="{Binding Progress}"/>
 								</StackLayout>
 
 							</StackLayout>

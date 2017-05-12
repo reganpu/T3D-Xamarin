@@ -1,27 +1,5 @@
 ﻿<Properties StartupConfiguration="{375EDEED-09EA-488D-9788-3D8D0F32E775}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="T3D/Views/CloudView.xaml.cs">
-    <Files>
-      <File FileName="T3D/Pages/MasterPage.xaml" Line="13" Column="2" />
-      <File FileName="T3D/Views/StorageView.xaml" Line="1" Column="1" />
-      <File FileName="T3D/Views/CloudView.xaml" Line="1" Column="1" />
-      <File FileName="T3D/Interfaces/ISaveAndLoad.cs" Line="8" Column="5" />
-      <File FileName="iOS/Implements/SaveAndLoad.cs" Line="51" Column="104" />
-      <File FileName="T3D/Views/CloudView.xaml.cs" Line="8" Column="16" />
-      <File FileName="T3D/Views/StorageView.xaml.cs" Line="27" Column="66" />
-      <File FileName="T3D/T3DPage.xaml.cs" Line="13" Column="1" />
-      <File FileName="T3D/T3DPage.xaml" Line="1" Column="1" />
-      <File FileName="T3D/Models/ItemInTheCloud.cs" Line="9" Column="3" />
-      <File FileName="T3D/Interfaces/IScreenBrightness.cs" Line="8" Column="3" />
-      <File FileName="iOS/Implements/ScreenBrightness.cs" Line="19" Column="53" />
-      <File FileName="T3D/Pages/SliceShowPage.xaml" Line="1" Column="1" />
-      <File FileName="T3D/Pages/SliceShowPage.xaml.cs" Line="35" Column="5" />
-      <File FileName="T3D/Pages/DetailPage.xaml.cs" Line="42" Column="9" />
-      <File FileName="T3D/Pages/DetailPage.xaml" Line="1" Column="1" />
-      <File FileName="T3D/Pages/ParameterSettingPage.xaml" Line="1" Column="1" />
-      <File FileName="T3D/Pages/ParameterSettingPage.xaml.cs" Line="10" Column="30" />
-      <File FileName="T3D/Pages/QRCodeScanPage.xaml" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

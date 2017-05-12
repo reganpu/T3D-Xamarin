@@ -7,20 +7,22 @@ namespace T3D
 {
 	public partial class ParameterSettingPage : ContentPage
 	{
+		string name;
 		public ParameterSettingPage()
 		{
 			InitializeComponent();
 		}
 
-		public ParameterSettingPage(ImageSource imageSource)
+		public ParameterSettingPage(ImageSource imageSource, string name)
 		{
             InitializeComponent();
 			image.Source = imageSource;
+			this.name = name;
 		}
 
 		void Handle_Clicked(object sender, System.EventArgs e)
 		{
-			Navigation.PushAsync(new SliceShowPage());
+			Navigation.PushAsync(new SliceShowPage(name));
 		}
 	}
 }

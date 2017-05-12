@@ -25,7 +25,7 @@ namespace T3D
 
 		//string[] fileName = { "Moai", "Cube", "T3D" };
 
-		string[] notes = { "By abcde", "By fghijk", "By T3D" };
+		//string[] notes = { "By abcde", "By fghijk", "By T3D" };
 
 
 		List<byte[]> coverImageAsBytesList = new List<byte[]>();
@@ -146,7 +146,7 @@ namespace T3D
 			//downloadSlicesOfSelectedModel();
 
 			/// inform storage to update (Event)
-			MessagingCenter.Send(this, "download completed", itemInTheCloud.Name);
+			//MessagingCenter.Send(this, "download completed", itemInTheCloud.Name);
 
 			// test
 			//Navigation.PushAsync(new Page());
@@ -167,7 +167,7 @@ namespace T3D
 			int sliceImageIndex = 1;
 			HttpClient httpClient = new HttpClient();
 			while (true)
-			{
+			{	
 				string sliceImageIndexInString = sliceImageIndex.ToString("000");
 				string sliceImageUriString = bluehostDNS + "/" + fileDirectory + "/" + imageName + "_/" + imageName + "_" + sliceImageIndexInString + imageExtension;
 				HttpResponseMessage httpResponseMessage = await httpClient.GetAsync(sliceImageUriString);
@@ -178,6 +178,12 @@ namespace T3D
 					DependencyService.Get<ISaveAndLoad>().SaveByteImage(imageName, sliceImageIndexInString, fileExtension, byteArrayImage);
 				
 					sliceImageIndex++;
+
+					if (sliceImageIndex == 5)
+					{
+						/// inform storage to update (Event)
+						MessagingCenter.Send(this, "downloading", imageName);
+					}
 				}
 				else
 				{

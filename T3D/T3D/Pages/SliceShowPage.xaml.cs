@@ -7,15 +7,20 @@ namespace T3D
 {
 	public partial class SliceShowPage : ContentPage
 	{
-		string modelName = "Moai";
+		string modelName;
 		string[] modelNumber = { "001", "002", "003", "004", "005"};
 		int modelNumberIndex = 0;
 		byte[] byteImage;
 
 		public SliceShowPage()
 		{
-			InitializeComponent();
+            InitializeComponent();
+		}
 
+		public SliceShowPage(string name)
+		{
+			InitializeComponent();
+            this.modelName = name;
 			//DependencyService.Get<IScreenBrightness>().SetScreenBrightness(0);
 
 			Device.StartTimer(TimeSpan.FromSeconds(1), () =>
