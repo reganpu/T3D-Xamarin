@@ -100,21 +100,23 @@
 
 								<Grid Padding="9,0,0,0" Grid.Column="1">
 									<Grid.RowDefinitions>
-										<RowDefinition Height="51*"/>
-										<RowDefinition Height="36*"/>
+										<RowDefinition Height="20*"/>
+										<RowDefinition Height="31*"/>
+										<RowDefinition Height="18*"/>
+										<RowDefinition Height="18*"/>
 										<RowDefinition Height="4"/>
-										<RowDefinition Height="13"/>
+										<RowDefinition Height="13*"/>
 									</Grid.RowDefinitions>
 
-									<Label Grid.Row="0" Text="{Binding Name}" TextColor="#94d4d4" Font="17"
+									<Label Grid.Row="1" Text="{Binding Name}" TextColor="#94d4d4" Font="17"
 										   VerticalTextAlignment="End" HorizontalTextAlignment="Start"/>
-									<Label Grid.Row="1" Text="{Binding Notes}" TextColor="Gray" Font="15"
+									<Label Grid.Row="3" Text="{Binding Notes}" TextColor="Gray" Font="15"
 										   Margin="0,7,0,0"/>
-									<Image Grid.Row="2" Source="dashed_line.png" Aspect="Fill"/>
-									<Button Grid.Row="3" HorizontalOptions="End" VerticalOptions="Center" Margin="0,-0.5,4,0"  
+									<Image Grid.Row="4" Source="dashed_line.png" Aspect="Fill"/>
+									<Button Grid.Row="5" HorizontalOptions="End" VerticalOptions="Center" Margin="0,0,4,0"  
 											Image="btn_uncheck.png" WidthRequest="10" HeightRequest="10"/>
-									<Label Grid.Row="3" Text="http://www.thingiverse.com" FontSize="6" TextColor="#bfbfbf"
-										   Margin="0,-0.5,5,0" HorizontalTextAlignment="End" VerticalOptions="Center"/>
+									<Label Grid.Row="5" Text="http://www.thingiverse.com" FontSize="6" TextColor="#bfbfbf"
+										   Margin="0,0,5,2" HorizontalTextAlignment="End"/>
 								</Grid>
 
 							</Grid>

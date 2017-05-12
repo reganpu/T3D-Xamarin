@@ -5197,7 +5197,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "A31CE3E2-95FD-4ACE-98BE-0D5C6DD31AAE"
+	.asciz "D3DB53CC-8BA6-4A84-BD20-A9D5D7F1F357"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -5280,7 +5280,7 @@ _mono_aot_file_info:
 	.long 168,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 70,104,108,9,53,247,160,102,147,126,97,147,149,170,237,90
+	.byte 37,182,190,42,222,238,125,211,255,139,196,175,199,127,54,54
 	.globl _mono_aot_module_T3D_iOS_info
 	.align 2
 _mono_aot_module_T3D_iOS_info:

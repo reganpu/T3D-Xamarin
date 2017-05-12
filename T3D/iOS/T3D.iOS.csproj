@@ -109,6 +109,7 @@
     <Folder Include="Resources\" />
     <Folder Include="Resources\ThreeDModels\" />
     <Folder Include="Implements\" />
+    <Folder Include="Resources\Categories\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -170,6 +171,15 @@
     <BundleResource Include="Resources\Bg_adjust.png" />
     <BundleResource Include="Resources\Btn_ready.png" />
     <BundleResource Include="Resources\dashed_line.png" />
+    <BundleResource Include="Resources\Categories\All.png" />
+    <BundleResource Include="Resources\Categories\icon_animals.png" />
+    <BundleResource Include="Resources\Categories\icon_architecture.png" />
+    <BundleResource Include="Resources\Categories\icon_characters.png" />
+    <BundleResource Include="Resources\Categories\icon_food.png" />
+    <BundleResource Include="Resources\Categories\icon_other.png" />
+    <BundleResource Include="Resources\Categories\icon_tools.png" />
+    <BundleResource Include="Resources\Categories\icon_toys.png" />
+    <BundleResource Include="Resources\Categories\icon_transports.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.4.224\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.224\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

@@ -17,8 +17,84 @@
 					Android="btn_menu.png"/>
 	</ContentPage.Icon> 
 
+	<Frame OutlineColor="Accent" BackgroundColor="#f0f0f0">
+		<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="268*"/>
+			<RowDefinition Height="1652*"/>
+		</Grid.RowDefinitions>
 
-	<Frame OutlineColor="Accent">
+		<StackLayout Grid.Row="0" Orientation="Horizontal">
+			<BoxView Color="#5ac1be"/>
+			<Label Text="Model Categories" TextColor="#5ac1be" VerticalTextAlignment="End" FontSize="22"/>
+		</StackLayout>
+
+		<StackLayout Grid.Row="1" Margin="20">
+			<Label Text="All" TextColor="#49bbb8" FontSize="22"/>
+
+			<StackLayout Orientation="Horizontal">
+				<Image Source="Categories/icon_animals" HeightRequest="32"/>
+				<Label Text="Animals" TextColor="#7d7d7d" 
+					   VerticalTextAlignment="Center" HeightRequest="42.75" FontSize="17"
+					   Margin="4"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal">
+				<Image Source="Categories/icon_characters" HeightRequest="32"/>
+				<Label Text="Characters" TextColor="#7d7d7d" 
+					   VerticalTextAlignment="Center" HeightRequest="42.75" FontSize="17"
+					   Margin="4"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal">
+				<Image Source="Categories/icon_transports" HeightRequest="32"/>
+				<Label Text="Transports" TextColor="#7d7d7d" 
+					   VerticalTextAlignment="Center" HeightRequest="42.75" FontSize="17"
+					   Margin="4"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal">
+				<Image Source="Categories/icon_toys" HeightRequest="32"/>
+				<Label Text="Toys" TextColor="#7d7d7d" 
+					   VerticalTextAlignment="Center" HeightRequest="42.75" FontSize="17"
+					   Margin="4"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal">
+				<Image Source="Categories/icon_tools" HeightRequest="32"/>
+				<Label Text="Tools" TextColor="#7d7d7d" 
+					   VerticalTextAlignment="Center" HeightRequest="42.75" FontSize="17"
+					   Margin="4"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal">
+				<Image Source="Categories/icon_food" HeightRequest="32"/>
+				<Label Text="Food" TextColor="#7d7d7d" 
+					   VerticalTextAlignment="Center" HeightRequest="42.75" FontSize="17"
+					   Margin="4"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal">
+				<Image Source="Categories/icon_architecture" HeightRequest="32"/>
+				<Label Text="Architectures" TextColor="#7d7d7d" 
+					   VerticalTextAlignment="Center" HeightRequest="42.75" FontSize="17"
+					   Margin="4"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal">
+				<Image Source="Categories/icon_other" HeightRequest="32"/>
+				<Label Text="Others" TextColor="#7d7d7d" 
+					   VerticalTextAlignment="Center" HeightRequest="42.75" FontSize="17"
+					   Margin="4"/>
+			</StackLayout>
+			
+		</StackLayout>
+		
+	</Grid>
+	</Frame>
+
+	
+	<!--Frame OutlineColor="Accent">
 		<StackLayout Orientation="Horizontal"
 					 HorizontalOptions="Center"
 					 VerticalOptions="Center">
@@ -29,6 +105,6 @@
 								  Path=Height,
 								  StringFormat='&#x00D7; {0:F0}'}"/>
 		</StackLayout>
-	</Frame>
+	</Frame-->
 	
 </ContentPage>

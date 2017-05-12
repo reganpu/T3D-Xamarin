@@ -58,3 +58,12 @@
 /Users/regan/T3D Developing/T3D/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll
 /Users/regan/T3D Developing/T3D/iOS/bin/iPhoneSimulator/Debug/T3D.dll
 /Users/regan/T3D Developing/T3D/iOS/bin/iPhoneSimulator/Debug/T3D.dll.mdb
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/optimized/Categories/All.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/optimized/Categories/icon_animals.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/optimized/Categories/icon_architecture.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/optimized/Categories/icon_characters.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/optimized/Categories/icon_food.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/optimized/Categories/icon_other.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/optimized/Categories/icon_tools.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/optimized/Categories/icon_toys.png
+/Users/regan/T3D Developing/T3D/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/optimized/Categories/icon_transports.png
