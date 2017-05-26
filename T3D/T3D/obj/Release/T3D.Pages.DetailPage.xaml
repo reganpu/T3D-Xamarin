@@ -3,7 +3,7 @@
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 xmlns:local="clr-namespace:T3D"
 			 x:Class="T3D.DetailPage"
-			 Title="T3D Gallery"
+			 Title="Gallery"
 			 x:Name="detailPage">
 
 	<ContentPage.Resources>
@@ -91,6 +91,7 @@
 		<Grid Grid.Row="2">
 			<local:CloudView x:Name="cloudView" IsVisible="true"/>
 			<local:StorageView x:Name="storageView" IsVisible="false"/>
+
 		</Grid>
 		
 	</Grid>

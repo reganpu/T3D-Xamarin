@@ -181,6 +181,8 @@
     <BundleResource Include="Resources\Categories\icon_tools.png" />
     <BundleResource Include="Resources\Categories\icon_toys.png" />
     <BundleResource Include="Resources\Categories\icon_transports.png" />
+    <BundleResource Include="Resources\icon_add.png" />
+    <BundleResource Include="Resources\icon_reduce.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.4.224\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.224\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

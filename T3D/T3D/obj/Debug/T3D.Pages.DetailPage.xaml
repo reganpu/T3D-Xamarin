@@ -91,6 +91,7 @@
 		<Grid Grid.Row="2">
 			<local:CloudView x:Name="cloudView" IsVisible="true"/>
 			<local:StorageView x:Name="storageView" IsVisible="false"/>
+
 		</Grid>
 		
 	</Grid>

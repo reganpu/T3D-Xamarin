@@ -4,9 +4,13 @@
 			 x:Class="T3D.SliceShowPage"
 			 >
 
-	<StackLayout Spacing="0" Margin="0" Padding="0">
-		<Image x:Name="image" Source="BlackScreen_iPhone7Plus.png" BackgroundColor="Black"/>
-	</StackLayout>
+	<Grid RowSpacing="0" ColumnSpacing="0" BackgroundColor="Black">
+		
+		<Image x:Name="image"
+			   Source="BlackScreen_iPhone7Plus.png" 
+			   />
+		
+	</Grid>
 
 	
 </ContentPage>
